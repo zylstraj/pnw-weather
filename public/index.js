@@ -10,7 +10,7 @@ $(document).ready(function(){
 // })
   $('#seattleWeather').click(function(){
     // var resultElement = $('#resultDiv');
-    $.get("http://api.openweathermap.org/data/2.5/weather?id=5809844&units=imperial&APPID=0547f7cf3264ad65fb0b9df34fdf9cb1", function( data ) {
+    $.get("https://pro.openweathermap.org/data/2.5/weather?id=5809844&units=imperial&APPID=0547f7cf3264ad65fb0b9df34fdf9cb1", function( data ) {
       console.log(data.weather[0].main);
     $('#resultDiv').html((function() {
     var $mainWeather = data.weather[0].main;
@@ -22,7 +22,7 @@ $(document).ready(function(){
   });
   $('#portlandWeather').click(function(){
     // var resultElement = $('#resultDiv');
-    $.get("http://api.openweathermap.org/data/2.5/weather?id=5746545&units=imperial&APPID=0547f7cf3264ad65fb0b9df34fdf9cb1", function( data ) {
+    $.get("https://pro.openweathermap.org/data/2.5/weather?id=5746545&units=imperial&APPID=0547f7cf3264ad65fb0b9df34fdf9cb1", function( data ) {
       console.log(data.weather[0].main);
     $('#resultDiv').html((function() {
     var $mainWeather = data.weather[0].main;
@@ -34,7 +34,7 @@ $(document).ready(function(){
   });
   $('#vancouverWeather').click(function(){
     // var resultElement = $('#resultDiv');
-    $.get("http://api.openweathermap.org/data/2.5/weather?id=6173331&units=imperial&APPID=0547f7cf3264ad65fb0b9df34fdf9cb1", function( data ) {
+    $.get("https://pro.openweathermap.org/data/2.5/weather?id=6173331&units=imperial&APPID=0547f7cf3264ad65fb0b9df34fdf9cb1", function( data ) {
       console.log(data.weather[0].main);
     $('#resultDiv').html((function() {
     var $mainWeather = data.weather[0].main;
